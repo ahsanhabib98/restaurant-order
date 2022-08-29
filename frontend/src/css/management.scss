@@ -1,0 +1,250 @@
+.management-wrapper {
+  .form-control {
+    max-width: 350px;
+  }
+
+  .brand-list {
+    .brand-header {
+      width: 350px;
+    }
+
+    .brand-item {
+      margin-bottom: 30px;
+    }
+
+    .brand-subdomain {
+      margin-left: 30px;
+
+      .domain-name {
+        position: relative;
+
+        .form-control {
+          width: calc(350px - 30px);
+          padding-right: 100px;
+          text-transform: lowercase;
+        }
+
+        span {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+// brand-info-wrapper
+
+.brand-info-wrapper {
+  .brandInfo {
+    .cover-img {
+    }
+  }
+
+  .tax-inclusive {
+    height: 38px;
+    padding: 0 15px;
+
+    .form-check-input {
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .opening-hour {
+    .switch {
+      margin: 0;
+    }
+
+    .table:not(.table-sm):not(.table-md):not(.dataTable) th {
+      height: auto;
+    }
+
+    .table {
+      th,
+      td {
+        vertical-align: middle;
+        padding: 10px;
+      }
+
+      tr {
+        th:first-child,
+        td:first-child {
+          // padding-left: 0;
+        }
+
+        td:last-child {
+          text-align: right;
+        }
+      }
+
+      tbody tr {
+        height: 60px;
+      }
+
+      .btn {
+        color: $primary_color;
+        background: transparent;
+        font-weight: 600;
+        font-size: 13px;
+
+        svg {
+          width: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.image-upload-wrap {
+  max-width: 550px;
+  height: 300px;
+  background: $table_bg_color;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+
+  &.img-sm {
+    width: 120px;
+    height: 120px;
+
+    .img-icon span svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  .img-icon {
+    width: 100%;
+    height: 100%;
+
+    span {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba($color: #000000, $alpha: 0.2);
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    cursor: no-drop;
+    z-index: 1;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .removeImage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $primary_color;
+    padding: 0 15px;
+    width: 100%;
+    line-height: 36px;
+    color: $white_color !important;
+    text-align: center;
+    border: 0;
+    z-index: 1;
+    transition: 0.4s;
+
+    &:hover {
+      background: $primary_hover_color;
+    }
+  }
+}
+
+// ......................
+
+div.ReactTags__tags {
+  position: relative;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.1);
+}
+
+/* Styles for the input */
+div.ReactTags__tagInput {
+  width: 100%;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+div.ReactTags__tagInput input.ReactTags__tagInputField,
+div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 18px;
+  transition: all ease 0.4s;
+  width: 100%;
+  padding: 8px;
+}
+
+span.tag-wrapper.ReactTags__tag {
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 30px;
+  background: $table_bg_color;
+  border-radius: 3px;
+  margin: 0 5px 5px 0;
+  line-height: 28px;
+  white-space: nowrap;
+  position: relative;
+  transition: all ease 0.4s;
+
+  &:hover {
+    color: $white_color;
+    background: $primary_color;
+
+    button {
+      color: $white_color;
+    }
+  }
+}
+
+button.ReactTags__remove {
+  background: transparent;
+  border: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.opening-hour .react-switch {
+  margin-top: 3px;
+}

@@ -1,0 +1,54 @@
+.step {
+  // padding: 25px;
+  .otp_main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 !important;
+    border-right: 0;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: $primary_color;
+    }
+
+    svg {
+      display: none;
+    }
+
+    .otp_code_not_send {
+      text-align: left !important;
+    }
+
+    .otp_confirm input {
+      height: 70px;
+    }
+  }
+
+  .sub-total {
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .address {
+    // align-items: top !important;
+
+    h6 {
+      font-size: 15px;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+}

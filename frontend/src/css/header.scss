@@ -1,0 +1,57 @@
+// gutter setting
+@for $g from 2 through 3 {
+  .on-gutter-#{$g}0px {
+    margin-top: -($g * 10px)/2 !important;
+    margin-bottom: -($g * 10px)/2 !important;
+    > div,
+    > li {
+      padding-top: ($g * 10px)/2 !important;
+      padding-bottom: ($g * 10px)/2 !important;
+    }
+  }
+}
+
+.header-menu {
+  background: $white_color;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  h6 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 66px;
+  }
+}
+
+.restaurant-name {
+  cursor: pointer;
+  color: $secondary_font_color_1 !important;
+  font-size: 15px !important;
+}
+
+.header button {
+  border-radius: 4px;
+  background: $secondary_color !important;
+  border: transparent !important;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.page_title h3 {
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.ReactStickyHeader_root {
+  margin-bottom: 120px;
+}
+
+.ReactStickyHeader_fixed {
+  background: $white_color;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
