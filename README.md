@@ -1,6 +1,6 @@
-# Onno
+# Restaurant
 
-### Run Onno containers
+### Run Restaurant containers
 ## For Set up
 Add .env file in root directory
 ```
